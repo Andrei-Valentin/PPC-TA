@@ -11,5 +11,5 @@ def predict_gen(meta1):
     lgn = data['lgn']
     x = norma.transform([meta1])
     pred = svmp.predict(x)
-    return(lgn[pred[0]])
+    return lgn[pred[0]]
 
